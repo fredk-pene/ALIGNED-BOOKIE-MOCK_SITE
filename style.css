@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@400;700&family=Playfair+Display:wght@500&family=Roboto:wght@300;400;700&display=swap');
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -11,9 +13,11 @@ nav {
 
 .title {
   font-size: 3.2em;
+  font-family: 'Roboto', sans-serif;  
+  font-weight: 400;
   margin-left: 20px;
   margin-right: 40px;
-  justify-content: center;
+  align-items: center;
 }
 
 .title-part {
@@ -36,11 +40,30 @@ nav {
   margin-right: 70px;
 }
 
+.topnav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.topnav li {
+  margin: 0 10px;
+}
+
 .topnav a {
-  margin-left: 40px;
   text-decoration: none;
   color: #000;
   font-size: 2.2em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;  
+  padding: 0px 25px;
+}
+
+.topnav a:hover {
+  text-decoration: underline;
+  text-decoration-color: black;
+  text-decoration-color: black;
 }
 
 @media (max-width: 768px) {
@@ -50,4 +73,11 @@ nav {
   .topnav a {
     font-size: 1em;
   }
+}
+
+@media screen and (min-width: 479px) {
+.topnav {
+    padding-left: 25px !important;
+    padding-right: 25px!important;
+}
 }
