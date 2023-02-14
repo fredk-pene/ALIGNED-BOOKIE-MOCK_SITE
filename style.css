@@ -25,7 +25,7 @@
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 nav {
@@ -41,9 +41,8 @@ nav {
 
 .hamburger {
   display: block;
-  position: flex-end;
+  /* position: flex-end; */
   z-index: 1;
-
   user-select: none;
 
   appearance: none;
@@ -52,6 +51,19 @@ nav {
   background: none;
   cursor: pointer;
 }
+
+button.hamburger {
+  position: relative;
+  right: -20%;
+}
+
+@media only screen and (max-width: 600px) {
+  .hamburger {
+    right: -20px;
+    position: absolute;
+  }
+}
+
 
 .hamburger span {
   display: block;
@@ -138,9 +150,9 @@ nav {
   align-items: center;
   justify-content: center;
   margin:  auto;
-  margin-top: 10rem; /* adjust this value to the height of your navigation */
+  margin-top: 11rem;
   width: 90%;
-  height: 650px; /* adjust this value as necessary */
+  height: 700px;
   border: 1px solid black;
   position: relative;
 }
